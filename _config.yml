@@ -1,0 +1,59 @@
+# Setup
+title: Site title
+tagline: Your Website Tagline
+paginate: 3
+baseurl: ""
+permalink: pretty
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+
+# Options
+
+# Specify the author for blog posts
+author:
+  name: Tactik8
+  url: https://https://twitter.com/
+  email: admin@tactik8.com
+
+# Custom vars
+version: 3.0.0
+
+
+
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

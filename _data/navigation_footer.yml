@@ -1,0 +1,8 @@
+- name: Home
+  link: 
+- name: Blog
+  link: /blog
+- name: Privacy
+  link: /privacy
+- name: Terms and conditions
+  link: /terms_and_conditions
